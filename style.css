@@ -14,10 +14,11 @@ body {
     background-position: 915px;
     background-attachment: fixed;
     background-color: rgb(255, 189, 141);
-    display: flex;
-    min-height: 100vh;
+    display: flex;    
     flex-direction:row;
     position: relative;
+    height: 100vh;
+    width: 100%;
 }
 
 nav {
@@ -120,7 +121,7 @@ nav ul li a:hover{
     color: rgba(139, 0, 0, 0.847);
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.914);
     font-weight: 800;
-    padding-top: 14%;
+    padding-top: 13%;
     margin-left: 31%;
 }
 
@@ -189,7 +190,114 @@ footer {
     display: block;
     color: rgba(0, 0, 139, 0.958);
     font-size: smaller;
-    margin-top: 5%;
+    margin-top: 5.5%;
     margin-left: 38%;
     text-align: center;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    body {
+        background-image: none; /* Remove background image on smaller screens */
+        background-color: rgb(255, 189, 141); /* Keep the background color */
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Adjust height based on content */
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px 5%;
+        position: static; /* Change from absolute to static for normal flow */
+        align-items: flex-start;
+    }
+
+    nav ul {
+        width: 100%;
+        text-align: center; /* Center the nav items */
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation items */
+        margin: 10px 0; /* Add some vertical spacing */
+        margin-left: 0; /* Reset margin */
+    }
+
+    nav ul li a {
+        font-size: 25px; /* Adjust font size for mobile nav */
+    }
+
+    .socialicon {
+        position: static; /* Change from fixed to static */
+        display: flex; /* Use flexbox to align horizontally */
+        justify-content: center; /* Center social icons */
+        margin-top: 20px;
+        margin-left: 0;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .socialicon a {
+        margin: 0 10px; /* Adjust spacing between icons */
+    }
+
+    .content {
+        padding: 20px; /* Add padding to the content area */
+        text-align: center; /* Center content text */
+        width: 100%; /* Ensure content takes full width */
+    }
+
+    .content h1 {
+        font-size: 28px; /* Adjust heading size */
+        padding-top: 5%; /* Less top padding */
+        margin-left: 0; /* Center by default */
+        text-align: center;
+    }
+
+    .content p {
+        font-size: 16px; /* Adjust paragraph size */
+        margin-left: 0; /* Center by default */
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .content cite {
+        font-size: 13px; /* Adjust citation size */
+        margin-left: 0; /* Center by default */
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap; /* Allow images to wrap to the next line */
+        justify-content: center; /* Center images */
+        gap: 15px; /* Add space between images */
+        margin-left: 0; /* Reset margin */
+        padding: 10px 0;
+    }
+
+    .image {
+        width: 70px; /* Smaller image size */
+        height: 70px;
+        margin-left: 0; /* Reset margin */
+    }
+
+    .content a {
+        margin-left: 0; /* Center the download button */
+        margin-top: 30px;
+        width: fit-content; /* Adjust width to content */
+        display: block; /* Make it a block element to center with margin auto */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer {
+        margin-top: 30px;
+        margin-left: 0; /* Center footer */
+        text-align: center;
+        padding-bottom: 20px;
+    }
 }
