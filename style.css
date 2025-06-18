@@ -11,13 +11,12 @@ body {
     background-image: url("./Assets/developeredited.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 895px;
+    background-position: 915px;
     background-attachment: fixed;
     background-color: rgb(255, 189, 141);
     display: flex;
     min-height: 100vh;
     flex-direction:row;
-    z-index: -1;
     position: relative;
 }
 
@@ -26,7 +25,7 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 20px 8%;
+    padding: 18px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,94 +40,15 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    font-size: 35px;
+    font-size: 33px;
     font-weight: 800;
     color: rgba(17, 17, 150, 0.816);
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.914);
 }
 
-.content h1 {
-    font-size: 35px;
-    color: rgba(139, 0, 0, 0.847);
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.914);
-    font-weight: 800;
-    padding-top: 15%;
-    margin-left: 31%;
-}
-
-.content p {
-    display: block;
-    font-size: 20px;
-    color: rgba(0, 0, 139, 0.875);
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.914);
-    font-weight: 600;
-    margin-left: 11%;
-    padding-top: 2%;
-}
-
-.content cite {
-    display: inline-block;
-    font-size: 15px;
-    color: rgba(0, 0, 139, 0.816);
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.914);
-    font-weight: 600;
-    margin-left: 16%;
-    padding-top: 2%;
-    padding-bottom: 3%;
-}
-
-.image {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    margin-left: 9%;
-    margin-top: 5px;
-    border-radius: 50px;
-    background-color: white;
-    border: 1px solid rgba(14, 158, 206, 0.834);
-    box-shadow: 3px 4px 5px rgba(164, 16, 238, 0.866);
-    padding: 0.5%;
-}
-
-.content a {
-    text-decoration: none;
-    display: inline-block;
-    color: darkblue;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.914);
-    border: 2px solid rgba(139, 0, 0, 0.682);
-    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.947);
-    padding: 5px 20px;
-    border-radius: 50px;
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: 800;
-    margin-left: 41%;
-    margin-top: 4%;
-    opacity: 0.9;
-    background-color: rgba(255, 255, 255, 0.378);
-}
-
-footer {
-    display: block;
-    color: rgba(0, 0, 139, 0.958);
-    font-size: smaller;
-    margin-top: 6%;
-    margin-left: 38%;
-    text-align: center;
-}
-
-.content a:hover{
-    background-color: rgba(220, 154, 254);
-    color: rgba(139, 0, 0, 0.847);
-}
-
 nav ul li a:hover{
     color: rgba(139, 0, 0, 0.847);
     text-decoration: underline;
-}
-
-.image:hover {
-    box-shadow: 0 0 2px 1px navy;
 }
 
 .socialicon{
@@ -193,4 +113,83 @@ nav ul li a:hover{
 
 .socialicon li:nth-child(4) a:hover{
     background-color:rgba(209, 38, 121, 0.4);
+}
+
+.content h1 {
+    font-size: 35px;
+    color: rgba(139, 0, 0, 0.847);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.914);
+    font-weight: 800;
+    padding-top: 14%;
+    margin-left: 31%;
+}
+
+.content p {
+    display: block;
+    font-size: 20px;
+    color: rgba(0, 0, 139, 0.875);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.914);
+    font-weight: 600;
+    margin-left: 11%;
+    padding-top: 1.5%;
+}
+
+.content cite {
+    display: inline-block;
+    font-size: 15px;
+    color: rgba(0, 0, 139, 0.816);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.914);
+    font-weight: 600;
+    margin-left: 16%;
+    padding-top: 1.5%;
+    padding-bottom: 3%;
+}
+
+.image {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-left: 9%;
+    margin-top: 3px;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid rgba(14, 158, 206, 0.834);
+    box-shadow: 3px 4px 5px rgba(164, 16, 238, 0.866);
+    padding: 0.5%;
+}
+
+.image:hover {
+    box-shadow: 0 0 2px 1px navy;
+}
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: darkblue;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.914);
+    border: 2px solid rgba(139, 0, 0, 0.682);
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.947);
+    padding: 5px 20px;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 41%;
+    margin-top: 4%;
+    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.378);
+}
+
+.content a:hover{
+    background-color: rgba(220, 154, 254);
+    color: rgba(139, 0, 0, 0.847);
+}
+
+footer {
+    display: block;
+    color: rgba(0, 0, 139, 0.958);
+    font-size: smaller;
+    margin-top: 5%;
+    margin-left: 38%;
+    text-align: center;
 }
